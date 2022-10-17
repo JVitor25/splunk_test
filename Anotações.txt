@@ -1,0 +1,9 @@
+Port: 8088
+
+Token: 7cf04ea6-975e-41b6-a982-93ad837d567a
+
+Tipo de arquivo | source: log4j
+
+index: order_api_dev
+
+source_name: http-event-logs
