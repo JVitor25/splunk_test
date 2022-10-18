@@ -7,3 +7,17 @@ Tipo de arquivo | source: log4j
 index: order_api_dev
 
 source_name: http-event-logs
+
+Para pesquisar no localhost do Splunk 8000.
+(estando na página principal)
+Search & Reporting -> colocar na barra de busca: index="{name}". No caso será: index="order_api_dev"
+
+Pode costumizar a barra de busca, como: 
+	index="order_api_dev" OrderController:placeOrder
+ou
+	index="order_api_dev" OrderController:getOrder
+ou
+	index="order_api_dev" AND ( EXCEPTION OR ERROR)
+
+
+*obs: podemos exportar os resultados indo na seta de "download". (em formato .csv .xml .json)
